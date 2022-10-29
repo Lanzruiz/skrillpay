@@ -20,13 +20,7 @@ class DashboardViewController: UIViewController {
    
     @IBAction func logoutButtonTapped(_ sender: UIBarButtonItem){
         
-        let loginViewController = UIStoryboard(name: Actions.StoryboardId.main, bundle: nil).instantiateViewController(withIdentifier: Actions.StoryboardId.LoginViewController)
+        PresenterManager.shared.show(vc: .loginController)
         
-        if let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate,
-           let window = sceneDelegate.window {
-             window.rootViewController = loginViewController
-           
-            UIView.transition(with: window, duration: 0.25, options: .transitionCrossDissolve, animations: nil, completion: nil)
-        }
     }
 }

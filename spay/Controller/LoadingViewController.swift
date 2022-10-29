@@ -38,12 +38,7 @@ class LoadingViewController: UIViewController {
         
         if isUserLoggedIn {
             
-            let mainTabBarController = UIStoryboard(name: Actions.StoryboardId.main, bundle: nil).instantiateViewController(withIdentifier: Actions.StoryboardId.MainTabController)
-            
-            if let sceneDelegate = view.window?.windowScene?.delegate as? SceneDelegate,
-               let window = sceneDelegate.window {
-                 window.rootViewController = mainTabBarController
-            }
+            PresenterManager.shared.show(vc: .mainTabBarController)
            
             
         } else {

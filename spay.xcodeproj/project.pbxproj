@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400AAC07290D446C00EE0EA2 /* PresenterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400AAC06290D446C00EE0EA2 /* PresenterManager.swift */; };
 		4036494E290D13E600E0E01F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4036494D290D13E600E0E01F /* LoginViewController.swift */; };
 		4064D40A29068FBA0019364B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4064D40929068FBA0019364B /* AppDelegate.swift */; };
 		4064D40C29068FBA0019364B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4064D40B29068FBA0019364B /* SceneDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		400AAC06290D446C00EE0EA2 /* PresenterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterManager.swift; sourceTree = "<group>"; };
 		4036494D290D13E600E0E01F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4064D40629068FBA0019364B /* spay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4064D40929068FBA0019364B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		400AAC05290D445500EE0EA2 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				400AAC06290D446C00EE0EA2 /* PresenterManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		4064D3FD29068FBA0019364B = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 		4064D40829068FBA0019364B /* spay */ = {
 			isa = PBXGroup;
 			children = (
+				400AAC05290D445500EE0EA2 /* Manager */,
 				4064D43C2906C92A0019364B /* Helper */,
 				4064D4392906AAC20019364B /* Controller */,
 				4064D40929068FBA0019364B /* AppDelegate.swift */,
@@ -290,6 +301,7 @@
 				40C8CA492907EDE300D07197 /* Constants.swift in Sources */,
 				40C8CA4B29080C2600D07197 /* DashboardViewController.swift in Sources */,
 				4064D40A29068FBA0019364B /* AppDelegate.swift in Sources */,
+				400AAC07290D446C00EE0EA2 /* PresenterManager.swift in Sources */,
 				4064D40C29068FBA0019364B /* SceneDelegate.swift in Sources */,
 				4064D43B2906AB2D0019364B /* LoadingViewController.swift in Sources */,
 				4064D43E2906C94C0019364B /* Helper.swift in Sources */,
